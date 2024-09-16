@@ -1,0 +1,53 @@
+### REGISTER
+POST http://localhost:3003/api/register
+Content-Type: application/json
+
+{
+  "fullName": "laba Diena",
+  "email": "laba@diena.lt",
+  "password": "labas123"
+}
+
+### LOGIN
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "email": "laba@diena.lt",
+  "password": "labas123"
+}
+
+### ACCOUNTS
+POST http://localhost:3003/api/accounts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY1MzgzNzEzNCwiZXhwIjoxNjUzODQwNzM0fQ.nUMBQbhQNdxiBGOJoFKXRHpn32f81alfmcfpKGCx0UI
+
+{
+  "group_id": 2
+}
+
+###
+GET http://localhost:3003/api/accounts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY1MzgzNzEzNCwiZXhwIjoxNjUzODQwNzM0fQ.nUMBQbhQNdxiBGOJoFKXRHpn32f81alfmcfpKGCx0UI
+###
+GET http://localhost:3003/api/accounts/
+
+
+### BILLS
+POST http://localhost:3003/api/bills?group_id=8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY1MzgzNzEzNCwiZXhwIjoxNjUzODQwNzM0fQ.nUMBQbhQNdxiBGOJoFKXRHpn32f81alfmcfpKGCx0UI
+
+{
+  "group_id": 8,
+  "amount": 100,
+  "description": "food"
+}
+
+###
+GET http://localhost:3003/api/bills/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY1MzgzNzEzNCwiZXhwIjoxNjUzODQwNzM0fQ.nUMBQbhQNdxiBGOJoFKXRHpn32f81alfmcfpKGCx0UI
+
+### GROUPS
+GET http://localhost:3003/api/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTY1MzgzNzEzNCwiZXhwIjoxNjUzODQwNzM0fQ.nUMBQbhQNdxiBGOJoFKXRHpn32f81alfmcfpKGCx0UI

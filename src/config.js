@@ -13,7 +13,11 @@ const dbConfig = {
 
 console.log('dbConfig===', dbConfig);
 
+const jwtSecret = process.env.JWT_SECRET;
+if (!jwtSecret) throw new Error('no jwt secret found in .env');
+
 module.exports = {
   PORT,
   dbConfig,
+  jwtSecret,
 };

@@ -1,0 +1,212 @@
+@import 'reset.css';
+@import 'common.css';
+
+.logo{
+    width: 5rem;
+    border-radius: 7rem;
+    border: 1px solid rgb(194, 191, 191);
+    padding: 0.3rem;
+    margin-top: 2.5rem;
+    /* background-color: white; */
+}
+
+.subtitle{
+    color: grey;
+}
+
+.register{
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 10px;
+background-color: white;
+border: 2px solid black;
+}
+
+.input{
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(196, 191, 191);
+}
+
+
+.error-msg {
+    color: tomato;
+    margin-top: 0;
+  }
+
+  p.error-msg{
+      margin-bottom: 12px;
+  }
+
+
+  .invalid-input {
+    border: 2px solid tomato;
+    background-color: rgb(251, 238, 235);
+
+  }
+  
+  .footer{
+      
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 5%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+  .success-msg {
+      color: green;
+      margin-top: -0.8rem;
+  }
+
+
+  .cards-container {
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  div.container.grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  .card-group{
+    border: 1px solid grey;
+    border-radius: 0.4rem;
+    padding: 30px;
+  }
+
+  .header-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 5%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .group-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    }
+
+/* BILLS */
+
+  .bills-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .bills-title{
+      color: brown;
+  }
+
+  .addBillForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 30px 20px;
+    /* background-color: rgba(78, 244, 208, 0.221); */
+    color: green;
+  }
+  th {
+    border-bottom: 1px solid rgba(244, 233, 23, 0.774);
+    background-color: rgba(234, 241, 16, 0.562);
+    color: var(--main-color)
+  }
+  
+  td{
+    color: brown;
+    background-color: rgba(238, 238, 233, 0.564);
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(232, 234, 237, 0.533);
+    
+  }
+  
+  tr:nth-child(even) {
+   background-color: rgb(222, 239, 240);
+  }
+
+  h3#err{
+    color: tomato;
+  }
+
+
+    .login-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3%;
+    background-color: rgba(43, 222, 34, 0.468);
+    border-radius: 0.8rem;
+    border: 0px solid rgb(30, 126, 210);
+    align-items: center;
+  }
+
+    .register-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3%;
+    background-color: rgba(152, 238, 232, 0.468);
+    border-radius: 0.8rem;
+    border: 0px solid rgb(30, 126, 210);
+    align-items: center;
+  }
+
+
+  .login-body {
+    background-image: url('./img/login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .register-body {
+    background-image: url('./img/register4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .group-body {
+    background-image: url('./img/blurr.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .bill-body {
+    background-image: url('https://lexicdn.lexingtondowntownhotel.com/do-las-vegas-hotels-have-microwaves-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+  }
